@@ -15,6 +15,10 @@ body {font-family: Arial, Helvetica, sans-serif;}
   width: 280px;
 }
 
+.netlify{
+    data-netlify: "true";
+}
+
 /* The popup form - hidden by default */
 .form-popup {
   display: none;
