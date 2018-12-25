@@ -40,29 +40,29 @@
 		return false;
 	});
 	
-	$("#myBtn").on('click',function() { 
-			event.preventDefault();
-			const emailTxt = $("#emailTxt").val();
-			const validEmail = validateEmail(emailTxt);
+	// $("#myBtn").on('click',function() { 
+	// 		event.preventDefault();
+	// 		const emailTxt = $("#emailTxt").val();
+	// 		const validEmail = validateEmail(emailTxt);
 	
-			if (validEmail) {
-				console.log("email valid");
-				$('#myBtn').prop('disabled', false);
-				$('#contactForm').attr('data-netlify', 'true');
-			  } else {
-				$("#emailTxt").css({ color: "red" });
-				$('#contactForm').removeAttr('data-netlify');
-				return;
-			  }
-		});
-			function validateEmail(email) {
-				var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-				return re.test(String(email).toLowerCase());
-			}
+	// 		if (validEmail) {
+	// 			console.log("email valid");
+	// 			$('#myBtn').prop('disabled', false);
+	// 			$('#contactForm').attr('data-netlify', 'true');
+	// 		  } else {
+	// 			$("#emailTxt").css({ color: "red" });
+	// 			$('#contactForm').removeAttr('data-netlify');
+	// 			return;
+	// 		  }
+	// 	});
+	// 		function validateEmail(email) {
+	// 			var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	// 			return re.test(String(email).toLowerCase());
+	// 		}
 
-	$('#emailTxt').keyup(){
-		$("#emailTxt").css({ color: "black" });
-	}
+	// $('#emailTxt').keyup(){
+	// 	$("#emailTxt").css({ color: "black" });
+	// }
 
 	function openForm() {
 		document.getElementById("myForm").style.display = "block";
