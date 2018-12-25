@@ -34,7 +34,16 @@
 			 scrollTop: 0
 		   }, 600);
 		   return false;
-		 })
+		 });
+
+		 function openForm() {
+			document.getElementById("myForm").style.display = "block";
+			console.log('displayed...');
+		  }
+		  
+		  function closeForm() {
+			document.getElementById("myForm").style.display = "none";
+		  }
 
 		//  $('.back-to-services').on('click',function(event) {
 		// 	event.preventDefault();
